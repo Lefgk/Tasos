@@ -19,7 +19,7 @@ function App() {
     name: "",
     email: "",
     date: "",
-    tourType: "Classical Tasos Tour",
+    tourType: "Classical Tour",
     participants: 1,
     message: "",
   });
@@ -47,7 +47,7 @@ function App() {
         name: "",
         email: "",
         date: "",
-        tourType: "Classical Tasos Tour",
+        tourType: "Classical Tour",
         participants: 1,
         message: "",
       });
@@ -215,14 +215,17 @@ function App() {
           <h2 style={{ textAlign: "center", margin: "0 0 30px", fontSize: "36px", color: "#333" }}> Tour description</h2>
           <p style={{ margin: "0 0 20px", lineHeight: "1.8", color: "#666", fontSize: "18px" }}>
             A beautiful and natural route around the Acropolis with 'high-quality' History and philosophy, the Route is entirely free from car/city
-            noise If you love ancient history and philosophy, beautiful esthetic neighborhoods, and panoramic views that tour is for you During the
-            itinerary, I'll be happy to share some of our best-kept secrets and be pleased to answer all your questions and curiosities. Tips in
-            written form and Google Spots will be given for your next days here in Athens (e.g where to eat, what to do, hidden gems places to visit)
-            <br />
+            noise.
+            <br /> <br /> If you love ancient history and philosophy, beautiful esthetic neighborhoods, and panoramic views that tour is for you
+            <br /> <br /> During the itinerary, I'll be happy to share some of our best-kept secrets and be pleased to answer all your questions and
+            curiosities.
+            <br /> <br /> Tips in written form and Google Spots will be given for your next days here in Athens (e.g where to eat, what to do, hidden
+            gems places to visit)
+            <br /> <br />
             *Not comfortable for baby strollers{" "}
           </p>
           <p style={{ margin: "0 0 15px", fontWeight: "bold" }}>
-            <span style={{ color: "#0072bb" }}>Duration:</span> 3 hours
+            <span style={{ color: "#0072bb" }}>Duration:</span> 2:15 hours
           </p>
 
           <a
@@ -346,7 +349,7 @@ function App() {
                   fontSize: "16px",
                 }}
               >
-                <option value="Classical Tasos Tour">Classical Tasos Tour</option>
+                <option value="Classical Tour">Classical Tour</option>
                 <option value="Athens Street Art Tour">Athens Street Art Tour</option>
                 <option value="Food & Culture Tour">Food & Culture Tour</option>
               </select>
@@ -492,13 +495,7 @@ function App() {
               <p style={{ margin: 0, fontWeight: "bold" }}>Email</p>
               <p style={{ margin: "5px 0 0", color: "#666" }}>athens-free-walking-tour@proton.me</p>
             </div>
-
-            <div style={{ textAlign: "center" }}>
-              <div style={{ fontSize: "24px", color: "#0072bb", marginBottom: "10px" }}>📱</div>
-              <p style={{ margin: 0, fontWeight: "bold" }}>Phone</p>
-              <p style={{ margin: "5px 0 0", color: "#666" }}>+30 210 1234567</p>
-            </div>
-
+            <br />
             <div style={{ textAlign: "center" }}>
               <div style={{ fontSize: "24px", color: "#0072bb", marginBottom: "10px" }}>📍</div>
               <p style={{ margin: 0, fontWeight: "bold" }}>Meeting Point</p>
@@ -513,9 +510,9 @@ function App() {
           <div style={{ marginTop: "30px" }}>
             <h3 style={{ margin: "0 0 20px", color: "#333" }}>Follow Us</h3>
             <div style={{ display: "flex", justifyContent: "center", gap: "20px" }}>
-              <a href="#" style={{ color: "#0072bb", fontSize: "24px", textDecoration: "none" }}>
+              {/* <a href="#" style={{ color: "#0072bb", fontSize: "24px", textDecoration: "none" }}>
                 Facebook
-              </a>
+              </a> */}
               <a href="#" style={{ color: "#0072bb", fontSize: "24px", textDecoration: "none" }}>
                 Instagram
               </a>
@@ -530,7 +527,7 @@ function App() {
       {/* Footer */}
       <footer style={{ backgroundColor: "#333", color: "white", padding: "40px 20px", textAlign: "center" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <p style={{ margin: "0 0 20px" }}>© {new Date().getFullYear()} Tasos Tour. All rights reserved.</p>
+          <p style={{ margin: "0 0 20px" }}>© {new Date().getFullYear()}Tour. All rights reserved.</p>
           <p style={{ margin: 0, fontSize: "14px", color: "#aaa" }}>
             Tours operate rain or shine. Please arrive 15 minutes before the scheduled departure time.
           </p>
