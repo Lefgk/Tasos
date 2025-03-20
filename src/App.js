@@ -389,8 +389,8 @@ function App() {
               }}
             >
               <p style={{ fontSize: "18px", fontStyle: "italic", marginBottom: "20px", color: "#666" }}>
-                "The Street Art Tour showed us a completely different side of Athens that we would have missed otherwise. Dimitris was passionate and
-                engaging throughout."
+                Alex really wanted to explain the fundamental interconnectedness of things, and describe the currents of history, while keeping it
+                grounded. This was very nice, at least for someone like me. It was a lovely and relaxed wander.
               </p>
               <p style={{ fontWeight: "bold", color: "#333" }}>- James from UK</p>
             </div>
@@ -407,8 +407,11 @@ function App() {
               }}
             >
               <p style={{ fontSize: "18px", fontStyle: "italic", marginBottom: "20px", color: "#666" }}>
-                "The Food & Culture Tour was the highlight of our trip to Athens! We tried so many delicious foods and learned about Greek traditions.
-                Worth every penny!"
+                Alex was an outstanding tour guide! His vast knowledge of Greek history and philosophy was fascinating. He managed to turn the tour
+                into a journey through time, while incorporating personal stories and humor that made every moment enjoyable. The personal
+                relationship and relationship he created with each of the participants was exciting. Furthermore, at the end of the tour, Anastasios
+                sent us a detailed list of recommendations for other places in Athens that simply must not be missed, including hidden local
+                restaurants and authentic corners.
               </p>
               <p style={{ fontWeight: "bold", color: "#333" }}>- Akiko from Japan</p>
             </div>
