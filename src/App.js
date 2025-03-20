@@ -370,8 +370,9 @@ function App() {
               }}
             >
               <p style={{ fontSize: "18px", fontStyle: "italic", marginBottom: "20px", color: "#666" }}>
-                "The hidden gem Tour was absolutely amazing! Our guide Maria was knowledgeable, funny, and made the history come alive. Highly
-                recommended!"
+                Alex was a great guide! The tour was super interesting and with a deeper level of information! He showed us a bit of history,
+                philosophy, architecture and curiosities about Athens that made us fall in love with the city! He also gave us some precious extra
+                tips that defined the success and happiness of our following days in Greece! Thank you!!
               </p>
               <p style={{ fontWeight: "bold", color: "#333" }}>- Sarah from USA</p>
             </div>
