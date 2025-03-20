@@ -19,7 +19,7 @@ function App() {
     name: "",
     email: "",
     date: "",
-    tourType: "Classical Tour",
+    tourType: "The hidden gem Tour",
     participants: 1,
     message: "",
   });
@@ -47,7 +47,7 @@ function App() {
         name: "",
         email: "",
         date: "",
-        tourType: "Classical Tour",
+        tourType: "The hidden gem Tour",
         participants: 1,
         message: "",
       });
@@ -144,70 +144,6 @@ function App() {
 
         {/* </div> */}
       </section>
-
-      {/* Tours Section */}
-      {/* <section id="tours" style={{ padding: '80px 20px', maxWidth: '1200px', margin: '0 auto' }}>
-        <h2 style={{ textAlign: 'center', margin: '0 0 50px', fontSize: '36px', color: '#333' }}>Our Tours</h2>
-        
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '30px' }}>
-          
-          <div style={{ width: '300px', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
-            <div style={{ height: '200px', backgroundImage: 'url("https://via.placeholder.com/300x200")', backgroundSize: 'cover' }}></div>
-            <div style={{ padding: '20px' }}>
-              <h3 style={{ margin: '0 0 15px', color: '#0072bb' }}>Classical Tasos Tour</h3>
-              <p style={{ margin: '0 0 15px', color: '#666', lineHeight: '1.6' }}>Explore the rich history of ancient Athens, including the Acropolis, Ancient Agora, and more.</p>
-              <p style={{ margin: '0 0 15px', fontWeight: 'bold' }}><span style={{ color: '#0072bb' }}>Duration:</span> 3 hours</p>
-              <a href="#booking" style={{
-                display: 'inline-block',
-                backgroundColor: '#0072bb',
-                color: 'white',
-                padding: '8px 20px',
-                borderRadius: '5px',
-                textDecoration: 'none',
-                fontWeight: 'bold'
-              }}>Book Now</a>
-            </div>
-          </div>
-          
-          
-          <div style={{ width: '300px', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
-            <div style={{ height: '200px', backgroundImage: 'url("https://via.placeholder.com/300x200")', backgroundSize: 'cover' }}></div>
-            <div style={{ padding: '20px' }}>
-              <h3 style={{ margin: '0 0 15px', color: '#0072bb' }}>Athens Street Art Tour</h3>
-              <p style={{ margin: '0 0 15px', color: '#666', lineHeight: '1.6' }}>Discover the vibrant street art scene in Athens' hip neighborhoods of Psiri and Exarchia.</p>
-              <p style={{ margin: '0 0 15px', fontWeight: 'bold' }}><span style={{ color: '#0072bb' }}>Duration:</span> 2.5 hours</p>
-              <a href="#booking" style={{
-                display: 'inline-block',
-                backgroundColor: '#0072bb',
-                color: 'white',
-                padding: '8px 20px',
-                borderRadius: '5px',
-                textDecoration: 'none',
-                fontWeight: 'bold'
-              }}>Book Now</a>
-            </div>
-          </div>
-          
-          
-          <div style={{ width: '300px', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
-            <div style={{ height: '200px', backgroundImage: 'url("https://via.placeholder.com/300x200")', backgroundSize: 'cover' }}></div>
-            <div style={{ padding: '20px' }}>
-              <h3 style={{ margin: '0 0 15px', color: '#0072bb' }}>Food & Culture Tour</h3>
-              <p style={{ margin: '0 0 15px', color: '#666', lineHeight: '1.6' }}>Taste authentic Greek cuisine while learning about Athens' culinary traditions and culture.</p>
-              <p style={{ margin: '0 0 15px', fontWeight: 'bold' }}><span style={{ color: '#0072bb' }}>Duration:</span> 4 hours</p>
-              <a href="#booking" style={{
-                display: 'inline-block',
-                backgroundColor: '#0072bb',
-                color: 'white',
-                padding: '8px 20px',
-                borderRadius: '5px',
-                textDecoration: 'none',
-                fontWeight: 'bold'
-              }}>Book Now</a>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* About Section */}
       <section id="tour" style={{ padding: "80px 20px", backgroundColor: "#f8f9fa" }} href="#tour">
@@ -349,9 +285,7 @@ function App() {
                   fontSize: "16px",
                 }}
               >
-                <option value="Classical Tour">Classical Tour</option>
-                <option value="Athens Street Art Tour">Athens Street Art Tour</option>
-                <option value="Food & Culture Tour">Food & Culture Tour</option>
+                <option value="The hidden gem Tour">The hidden gem Tour</option>
               </select>
             </div>
           </div>
@@ -436,7 +370,7 @@ function App() {
               }}
             >
               <p style={{ fontSize: "18px", fontStyle: "italic", marginBottom: "20px", color: "#666" }}>
-                "The Classical Athens Tour was absolutely amazing! Our guide Maria was knowledgeable, funny, and made the history come alive. Highly
+                "The hidden gem Tour was absolutely amazing! Our guide Maria was knowledgeable, funny, and made the history come alive. Highly
                 recommended!"
               </p>
               <p style={{ fontWeight: "bold", color: "#333" }}>- Sarah from USA</p>
@@ -527,9 +461,9 @@ function App() {
       {/* Footer */}
       <footer style={{ backgroundColor: "#333", color: "white", padding: "40px 20px", textAlign: "center" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <p style={{ margin: "0 0 20px" }}>© {new Date().getFullYear()}Tour. All rights reserved.</p>
+          <p style={{ margin: "0 0 20px" }}>© {new Date().getFullYear()} The hidden gem Tour. All rights reserved.</p>
           <p style={{ margin: 0, fontSize: "14px", color: "#aaa" }}>
-            Tours operate rain or shine. Please arrive 15 minutes before the scheduled departure time.
+            Tours operate rain or shine. Please arrive 10 minutes before the scheduled departure time.
           </p>
         </div>
       </footer>
