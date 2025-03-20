@@ -88,15 +88,15 @@ function App() {
               </a>
             </li>
             <li style={{ margin: "0 15px" }}>
-              <a href="#tours" style={{ color: "#0072bb", textDecoration: "none", fontWeight: "bold" }}>
-                Tours
+              <a href="#tour" style={{ color: "#0072bb", textDecoration: "none", fontWeight: "bold" }}>
+                Tour
               </a>
             </li>
-            <li style={{ margin: "0 15px" }}>
+            {/* <li style={{ margin: "0 15px" }}>
               <a href="#about" style={{ color: "#0072bb", textDecoration: "none", fontWeight: "bold" }}>
                 About Us
               </a>
-            </li>
+            </li> */}
             <li style={{ margin: "0 15px" }}>
               <a href="#booking" style={{ color: "#0072bb", textDecoration: "none", fontWeight: "bold" }}>
                 Book Now
@@ -210,7 +210,7 @@ function App() {
       </section> */}
 
       {/* About Section */}
-      <section id="about" style={{ padding: "80px 20px", backgroundColor: "#f8f9fa" }}>
+      <section id="tour" style={{ padding: "80px 20px", backgroundColor: "#f8f9fa" }} href="#tour">
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ textAlign: "center", margin: "0 0 30px", fontSize: "36px", color: "#333" }}> Tour description</h2>
           <p style={{ margin: "0 0 20px", lineHeight: "1.8", color: "#666", fontSize: "18px" }}>
