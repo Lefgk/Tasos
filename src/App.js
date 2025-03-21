@@ -824,7 +824,7 @@ function App() {
         }}
       >
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <p style={{ margin: "0 0 20px", fontWeight: "bold" }}>
+          <p style={{ margin: "0 0 20px", fontWeight: "bold", color: "black" }}>
             © {new Date().getFullYear()} The Hidden Gem Tour. All rights
             reserved.
           </p>
