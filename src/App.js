@@ -280,13 +280,12 @@ function App() {
       <section
         id="booking"
         style={{
-          padding: "80px 20px",
-          maxWidth: "1000px",
-          margin: "0 auto",
-          backgroundImage: `url('/acropolis.jpg')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
+          padding: "80px 20px", // Adjust padding as needed
+          width: "100%", // Ensure the container takes full width
+          backgroundImage: `url('/book.jpg')`, // Path to your image
+          backgroundSize: "cover", // Ensures the image covers the entire container
+          backgroundPosition: "center", // Centers the image
+          backgroundRepeat: "no-repeat", // Prevents the image from repeating
         }}
       >
         <h2
@@ -318,11 +317,24 @@ function App() {
             </p>
           </div>
         ) : null}
+
         <form
           onSubmit={handleSubmit}
-          style={{ display: "flex", flexDirection: "column", gap: "20px" }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "20px",
+          }}
         >
-          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+          <div
+            style={{
+              display: "flex",
+              gap: "20px",
+              marginLeft: "20%",
+              flexWrap: "wrap",
+              maxWidth: "1000px",
+            }}
+          >
             <div style={{ flex: "1 1 300px" }}>
               <label
                 htmlFor="name"
@@ -385,7 +397,16 @@ function App() {
             </div>
           </div>
 
-          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+          <div
+            style={{
+              display: "flex",
+              gap: "20px",
+              flexWrap: "wrap",
+              marginLeft: "20%",
+              maxWidth: "1000px",
+              alignItems: "center",
+            }}
+          >
             <div style={{ flex: "1 1 300px" }}>
               <label
                 htmlFor="date"
@@ -461,9 +482,10 @@ function App() {
               htmlFor="participants"
               style={{
                 display: "block",
+                maxWidth: "1000px",
+                marginLeft: "20%",
                 marginBottom: "8px",
                 fontWeight: "bold",
-                width: "80%",
 
                 color: "white", // Changed color for better visibility
               }}
@@ -479,9 +501,10 @@ function App() {
               value={formData.participants}
               onChange={handleChange}
               style={{
-                width: "80%",
+                maxWidth: "1000px",
 
                 padding: "12px",
+                marginLeft: "20%",
                 borderRadius: "4px",
                 border: "1px solid #ddd",
                 fontSize: "16px",
@@ -496,6 +519,7 @@ function App() {
                 display: "block",
                 marginBottom: "8px",
                 fontWeight: "bold",
+                marginLeft: "20%",
                 color: "white",
               }}
             >
@@ -508,9 +532,10 @@ function App() {
               value={formData.message}
               onChange={handleChange}
               style={{
-                width: "80%",
+                width: "50%",
                 padding: "12px",
                 borderRadius: "4px",
+                marginLeft: "20%",
                 border: "1px solid #ddd",
                 fontSize: "16px",
                 resize: "vertical",
@@ -523,6 +548,8 @@ function App() {
             style={{
               backgroundColor: "#0072bb",
               color: "white",
+              maxWidth: "200px",
+              marginLeft: "20%",
               padding: "15px",
               border: "none",
               borderRadius: "5px",
@@ -538,7 +565,17 @@ function App() {
       </section>
 
       {/* Testimonials Section */}
-      <section style={{ padding: "80px 20px", backgroundColor: "#f8f9fa" }}>
+      <section
+        style={{
+          padding: "80px 20px",
+          backgroundColor: "#f8f9fa",
+
+          backgroundImage: `url('/greece1.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          marginTop: "80px",
+        }}
+      >
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <h2
             style={{
@@ -699,7 +736,7 @@ function App() {
               </div>
               <p style={{ margin: 0, fontWeight: "bold" }}>Email</p>
               <p style={{ margin: "5px 0 0", color: "#666" }}>
-                athens-free-walking-tour@proton.me
+                hidden.gem.walking.tour@gmail.com
               </p>
             </div>
             <br />
