@@ -816,6 +816,7 @@ function App() {
                 <p style={{ margin: "5px 0 0", color: "#666" }}>
                   ADAMS HOTEL
                   <br />
+                  THALOU 1, Athens 105 58 <br />
                   (There are a few wooden benches in front of ADAMS HOTELS.)
                 </p>
               </a>
