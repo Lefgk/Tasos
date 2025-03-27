@@ -31,8 +31,8 @@ function App() {
     try {
       // EmailJS configuration
       const response = await emailjs.send(
-        "service_YOUR_SERVICE_ID", // Replace with your EmailJS Service ID
-        "template_YOUR_TEMPLATE_ID", // Replace with your EmailJS Template ID
+        "service_bk4w4rj", // Replace with your EmailJS Service ID
+        "template_hqvjmer", // Replace with your EmailJS Template ID
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -43,7 +43,7 @@ function App() {
             formData.message || "No additional information provided",
           tour_type: formData.tourType,
         },
-        "YOUR_PUBLIC_KEY" // Replace with your EmailJS Public Key
+        "hVn6nKOOssKTpbazj" // Replace with your EmailJS Public Key
       );
 
       // Success handling
@@ -303,6 +303,10 @@ function App() {
             FROM 1/MARCH --- 31/MAY: 10:00 AM & 03:00 PM
             <br />
             FROM 1/JUNE --- 30/JUNE: 10:00 AM & 04:30 PM
+            <br />
+            FROM 1/SEPT --- 30/SEPT 10:00AM & 04:30PM
+            <br />
+            FROM 1/OCT --- 31/OCT 10:00AM & 03:00PM
           </p>
         </div>
       </section>
@@ -331,24 +335,33 @@ function App() {
           Book Your Tour
         </h2>
 
-        {isSubmitted ? (
+        {submitStatus === "success" && (
           <div
             style={{
               backgroundColor: "#d4edda",
               color: "#155724",
               padding: "20px",
-              borderRadius: "5px",
               textAlign: "center",
-              marginBottom: "30px",
+              marginBottom: "20px",
             }}
           >
-            <p style={{ margin: 0, fontSize: "18px", fontWeight: "bold" }}>
-              Thank you for your booking! We will contact you shortly to confirm
-              your tour.
-            </p>
+            Thank you for your booking! We will contact you shortly to confirm
+            your tour.
           </div>
-        ) : null}
-
+        )}
+        {submitStatus === "error" && (
+          <div
+            style={{
+              backgroundColor: "#f8d7da",
+              color: "#721c24",
+              padding: "20px",
+              textAlign: "center",
+              marginBottom: "20px",
+            }}
+          >
+            Oops! There was a problem submitting your booking. Please try again.
+          </div>
+        )}
         <form
           onSubmit={handleSubmit}
           style={{
@@ -801,12 +814,9 @@ function App() {
                 }}
               >
                 <p style={{ margin: "5px 0 0", color: "#666" }}>
-                  Pl. Lisikrati 1, Athina 105 58, Greece
+                  ADAMS HOTEL
                   <br />
-                  Monument of Lycicrates
-                  <br />
-                  "In front of the Diogenis restaurant, there are some wooden
-                  benches."
+                  (There are a few wooden benches in front of ADAMS HOTELS.)
                 </p>
               </a>
             </div>
