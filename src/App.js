@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 function App() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,8 @@ function App() {
     time: "", // Added time field
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,24 +23,52 @@ function App() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setIsSubmitted(true);
+    setIsSubmitting(true);
+    setSubmitStatus(null);
 
-    // Reset form after submission
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: "",
-        email: "",
-        date: "",
-        tourType: "The hidden gem Tour",
-        participants: 1,
-        message: "",
-        time: "",
-      });
-    }, 5000);
+    try {
+      // EmailJS configuration
+      const response = await emailjs.send(
+        "service_YOUR_SERVICE_ID", // Replace with your EmailJS Service ID
+        "template_YOUR_TEMPLATE_ID", // Replace with your EmailJS Template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          tour_date: formData.date,
+          tour_time: formData.time,
+          participants: formData.participants,
+          additional_info:
+            formData.message || "No additional information provided",
+          tour_type: formData.tourType,
+        },
+        "YOUR_PUBLIC_KEY" // Replace with your EmailJS Public Key
+      );
+
+      // Success handling
+      setSubmitStatus("success");
+
+      // Reset form after successful submission
+      setTimeout(() => {
+        setFormData({
+          name: "",
+          email: "",
+          date: "",
+          tourType: "The hidden gem Tour",
+          participants: 1,
+          message: "",
+          time: "",
+        });
+        setSubmitStatus(null);
+      }, 5000);
+    } catch (error) {
+      // Error handling
+      console.error("Email send failed:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   // Function to get available times based on the selected date
@@ -545,8 +576,9 @@ function App() {
 
           <button
             type="submit"
+            disabled={isSubmitting}
             style={{
-              backgroundColor: "#0072bb",
+              backgroundColor: isSubmitting ? "#cccccc" : "#0072bb",
               color: "white",
               maxWidth: "200px",
               marginLeft: "20%",
@@ -555,11 +587,11 @@ function App() {
               borderRadius: "5px",
               fontSize: "18px",
               fontWeight: "bold",
-              cursor: "pointer",
+              cursor: isSubmitting ? "not-allowed" : "pointer",
               marginTop: "10px",
             }}
           >
-            Book Now
+            {isSubmitting ? "Submitting..." : "Book Now"}
           </button>
         </form>
       </section>
