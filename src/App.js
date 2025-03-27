@@ -77,9 +77,9 @@ function App() {
     const selectedDate = new Date(date);
     const month = selectedDate.getMonth() + 1; // Months are 0-indexed
     console.log(selectedDate, month);
-    if (month >= 3 && month <= 5) {
+    if ((month >= 3 && month <= 5) || month === 10) {
       return ["10:00 AM", "03:00 PM"];
-    } else if (month === 6) {
+    } else if (month === 6 || month === 9) {
       return ["10:00 AM", "04:30 PM"];
     } else {
       return [];
