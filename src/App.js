@@ -797,14 +797,14 @@ function App() {
               </div>
               <a
                 style={{ margin: 0, fontWeight: "bold" }}
-                href="https://maps.app.goo.gl/GeGkW3GssvEdTdjc6"
+                href="https://g.co/kgs/33w9FCC"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Meeting Point
               </a>
               <a
-                href="https://maps.app.goo.gl/GeGkW3GssvEdTdjc6"
+                href="https://g.co/kgs/33w9FCC"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
