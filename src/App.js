@@ -582,7 +582,7 @@ function App() {
               textAlign: "center",
               margin: "0 0 50px",
               fontSize: "36px",
-              color: "white",
+              // color: "white",
               fontWeight: "bold",
             }}
           >
