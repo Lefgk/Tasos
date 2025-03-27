@@ -32,15 +32,14 @@ function App() {
       // EmailJS configuration
       const response = await emailjs.send(
         "service_bk4w4rj", // Replace with your EmailJS Service ID
-        "template_hqvjmer", // Replace with your EmailJS Template ID
+        "template_fmcoxlc", // Replace with your EmailJS Template ID
         {
-          from_name: formData.name,
-          from_email: formData.email,
-          tour_date: formData.date,
-          tour_time: formData.time,
+          name: formData.name,
+          email: formData.email,
+          date: formData.date,
+          time: formData.time,
           participants: formData.participants,
-          additional_info:
-            formData.message || "No additional information provided",
+          info: formData.message || "No additional information provided",
           tour_type: formData.tourType,
         },
         "hVn6nKOOssKTpbazj" // Replace with your EmailJS Public Key
