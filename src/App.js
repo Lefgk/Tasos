@@ -332,12 +332,12 @@ function App() {
       <section
         id="booking"
         style={{
-          padding: isMobile ? "40px 15px" : "80px 20px",
+          // padding: isMobile ? "40px 15px" : "80px 20px",
           width: "100%",
           backgroundImage: `url('/book.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
+          // backgroundRepeat: "no-repeat",
         }}
       >
         <h2
@@ -346,6 +346,7 @@ function App() {
             margin: "0 0 30px",
             fontSize: isMobile ? "28px" : "36px",
             color: "white",
+
             fontWeight: "bold",
           }}
         >
@@ -386,6 +387,7 @@ function App() {
             display: "flex",
             flexDirection: "column",
             gap: "15px",
+
             maxWidth: isMobile ? "100%" : "1000px",
             margin: "0 auto",
           }}
@@ -627,6 +629,7 @@ function App() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           marginTop: "80px",
+          width: "100%",
         }}
       >
         <div
