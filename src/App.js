@@ -252,6 +252,7 @@ function App() {
       <section
         id="tour"
         style={{
+          width: "100%",
           marginTop: "80px",
           marginBottom: "80px",
           padding: "80px 20px",
