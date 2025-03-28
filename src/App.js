@@ -102,21 +102,25 @@ function App() {
   };
 
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", margin: 0, padding: 0 }}>
+    <div
+      style={{
+        fontFamily: "Arial, sans-serif",
+      }}
+    >
       {/* Header */}
       <header
         style={{
           backgroundColor: "#0072bb",
           color: "white",
           padding: "20px 0",
+          width: "100%",
           textAlign: "center",
           position: "relative",
+          margin: 0,
         }}
       >
-        <div
-          style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 20px" }}
-        >
-          <h1 style={{ margin: 0, fontSize: "32px" }}>
+        <div style={{ padding: "0 20px", width: "100%" }}>
+          <h1 style={{ margin: 0, fontSize: "32px", width: "100%" }}>
             The original ‘’Hidden Gem Tour’’{" "}
           </h1>
           <p style={{ margin: "10px 0 0" }}>
@@ -217,7 +221,7 @@ function App() {
           textAlign: "center",
           position: "relative",
           flexDirection: "column",
-          marginTop: isMobile ? "150px" : 0,
+          // marginTop: isMobile ? "150px" : 0,
         }}
       >
         <div
