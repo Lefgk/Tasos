@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function App() {
@@ -22,6 +22,22 @@ function App() {
       [name]: value,
     }));
   };
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Common mobile breakpoint
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -193,7 +209,7 @@ function App() {
           backgroundImage: `url('/greece1.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "500px",
+          height: !isMobile ? "500px" : null,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -201,6 +217,7 @@ function App() {
           textAlign: "center",
           position: "relative",
           flexDirection: "column",
+          marginTop: isMobile ? "150px" : 0,
         }}
       >
         <div
@@ -314,19 +331,19 @@ function App() {
       <section
         id="booking"
         style={{
-          padding: "80px 20px", // Adjust padding as needed
-          width: "100%", // Ensure the container takes full width
-          backgroundImage: `url('/book.jpg')`, // Path to your image
-          backgroundSize: "cover", // Ensures the image covers the entire container
-          backgroundPosition: "center", // Centers the image
-          backgroundRepeat: "no-repeat", // Prevents the image from repeating
+          padding: isMobile ? "40px 15px" : "80px 20px",
+          width: "100%",
+          backgroundImage: `url('/book.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <h2
           style={{
             textAlign: "center",
-            margin: "0 0 50px",
-            fontSize: "36px",
+            margin: "0 0 30px",
+            fontSize: isMobile ? "28px" : "36px",
             color: "white",
             fontWeight: "bold",
           }}
@@ -361,31 +378,34 @@ function App() {
             Oops! There was a problem submitting your booking. Please try again.
           </div>
         )}
+
         <form
           onSubmit={handleSubmit}
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: "20px",
+            gap: "15px",
+            maxWidth: isMobile ? "100%" : "1000px",
+            margin: "0 auto",
           }}
         >
+          {/* Name & Email Group */}
           <div
             style={{
               display: "flex",
-              gap: "20px",
-              marginLeft: "20%",
-              flexWrap: "wrap",
-              maxWidth: "1000px",
+              flexDirection: isMobile ? "column" : "row",
+              gap: "15px",
+              width: "100%",
             }}
           >
-            <div style={{ flex: "1 1 300px" }}>
+            <div style={{ width: "100%" }}>
               <label
                 htmlFor="name"
                 style={{
                   display: "block",
                   marginBottom: "8px",
                   fontWeight: "bold",
-                  color: "white", // Changed color for better visibility
+                  color: "white",
                 }}
               >
                 Name *
@@ -398,7 +418,7 @@ function App() {
                 value={formData.name}
                 onChange={handleChange}
                 style={{
-                  width: "100%",
+                  width: isMobile ? "80%" : "100%",
                   padding: "12px",
                   borderRadius: "4px",
                   border: "1px solid #ddd",
@@ -407,16 +427,14 @@ function App() {
               />
             </div>
 
-            <div style={{ flex: "1 1 300px" }}>
+            <div style={{ width: "100%" }}>
               <label
                 htmlFor="email"
                 style={{
                   display: "block",
                   marginBottom: "8px",
-                  width: "80%",
-                  marginLeft: "20px",
                   fontWeight: "bold",
-                  color: "white", // Changed color for better visibility
+                  color: "white",
                 }}
               >
                 Email *
@@ -429,8 +447,7 @@ function App() {
                 value={formData.email}
                 onChange={handleChange}
                 style={{
-                  width: "80%",
-                  marginLeft: "20px",
+                  width: isMobile ? "80%" : "100%",
                   padding: "12px",
                   borderRadius: "4px",
                   border: "1px solid #ddd",
@@ -440,25 +457,23 @@ function App() {
             </div>
           </div>
 
+          {/* Date & Time Group */}
           <div
             style={{
               display: "flex",
-              gap: "20px",
-              flexWrap: "wrap",
-              marginLeft: "20%",
-              maxWidth: "1000px",
-              alignItems: "center",
+              flexDirection: isMobile ? "column" : "row",
+              gap: "15px",
+              width: isMobile ? "80%" : "100%",
             }}
           >
-            <div style={{ flex: "1 1 300px" }}>
+            <div style={{ width: "100%" }}>
               <label
                 htmlFor="date"
                 style={{
                   display: "block",
-
                   marginBottom: "8px",
                   fontWeight: "bold",
-                  color: "white", // Changed color for better visibility
+                  color: "white",
                 }}
               >
                 Preferred Date *
@@ -471,7 +486,7 @@ function App() {
                 value={formData.date}
                 onChange={handleChange}
                 style={{
-                  width: "100%",
+                  width: isMobile ? "80%" : "100%",
                   padding: "12px",
                   borderRadius: "4px",
                   border: "1px solid #ddd",
@@ -480,16 +495,14 @@ function App() {
               />
             </div>
 
-            <div style={{ flex: "1 1 300px" }}>
+            <div style={{ width: "100%" }}>
               <label
                 htmlFor="time"
                 style={{
                   display: "block",
                   marginBottom: "8px",
-                  width: "80%",
-                  marginLeft: "20px",
                   fontWeight: "bold",
-                  color: "white", // Changed color for better visibility
+                  color: "white",
                 }}
               >
                 Preferred Time *
@@ -501,8 +514,7 @@ function App() {
                 value={formData.time}
                 onChange={handleChange}
                 style={{
-                  width: "80%",
-                  marginLeft: "20px",
+                  width: isMobile ? "80%" : "100%",
                   padding: "12px",
                   borderRadius: "4px",
                   border: "1px solid #ddd",
@@ -520,17 +532,15 @@ function App() {
             </div>
           </div>
 
-          <div>
+          {/* Participants */}
+          <div style={{ width: "100%" }}>
             <label
               htmlFor="participants"
               style={{
                 display: "block",
-                maxWidth: "1000px",
-                marginLeft: "20%",
                 marginBottom: "8px",
                 fontWeight: "bold",
-
-                color: "white", // Changed color for better visibility
+                color: "white",
               }}
             >
               Number of Participants *
@@ -544,10 +554,8 @@ function App() {
               value={formData.participants}
               onChange={handleChange}
               style={{
-                maxWidth: "1000px",
-
+                width: isMobile ? "80%" : "100%",
                 padding: "12px",
-                marginLeft: "20%",
                 borderRadius: "4px",
                 border: "1px solid #ddd",
                 fontSize: "16px",
@@ -555,14 +563,14 @@ function App() {
             />
           </div>
 
-          <div>
+          {/* Message */}
+          <div style={{ width: "100%" }}>
             <label
               htmlFor="message"
               style={{
                 display: "block",
                 marginBottom: "8px",
                 fontWeight: "bold",
-                marginLeft: "20%",
                 color: "white",
               }}
             >
@@ -575,10 +583,9 @@ function App() {
               value={formData.message}
               onChange={handleChange}
               style={{
-                width: "50%",
+                width: isMobile ? "80%" : "100%",
                 padding: "12px",
                 borderRadius: "4px",
-                marginLeft: "20%",
                 border: "1px solid #ddd",
                 fontSize: "16px",
                 resize: "vertical",
@@ -586,14 +593,14 @@ function App() {
             ></textarea>
           </div>
 
+          {/* Submit Button */}
           <button
             type="submit"
             disabled={isSubmitting}
             style={{
               backgroundColor: isSubmitting ? "#cccccc" : "#0072bb",
               color: "white",
-              maxWidth: "200px",
-              marginLeft: "20%",
+              width: isMobile ? "80%" : "100%",
               padding: "15px",
               border: "none",
               borderRadius: "5px",
@@ -601,6 +608,7 @@ function App() {
               fontWeight: "bold",
               cursor: isSubmitting ? "not-allowed" : "pointer",
               marginTop: "10px",
+              alignSelf: isMobile ? "center" : "flex-start",
             }}
           >
             {isSubmitting ? "Submitting..." : "Book Now"}
@@ -613,14 +621,16 @@ function App() {
         style={{
           padding: "80px 20px",
           backgroundColor: "#f8f9fa",
-
+          maxWidth: isMobile ? "600px" : null,
           backgroundImage: `url('/greece1.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           marginTop: "80px",
         }}
       >
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div
+          style={{ maxWidth: isMobile ? "600px" : "1200px", margin: "0 auto" }}
+        >
           <h2
             style={{
               textAlign: "center",
