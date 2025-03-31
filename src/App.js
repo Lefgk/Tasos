@@ -120,12 +120,8 @@ function App() {
         }}
       >
         <div style={{ padding: "0 20px", width: "100%" }}>
-          <h1 style={{ margin: 0, fontSize: "32px", width: "100%" }}>
-            The original ‘’Hidden Gem Tour’’{" "}
-          </h1>
-          <p style={{ margin: "10px 0 0" }}>
-            Free Walking Tour around Acropolis
-          </p>
+          <h1 style={{ margin: 0, fontSize: "32px", width: "100%" }}>The original ‘’Hidden Gem Tour’’ </h1>
+          <p style={{ margin: "10px 0 0" }}>Free Walking Tour around Acropolis</p>
         </div>
       </header>
 
@@ -234,21 +230,11 @@ function App() {
             bottom: 0,
           }}
         ></div>
-        <div
-          style={{ position: "relative", maxWidth: "800px", padding: "0 20px" }}
-        >
-          <h2
-            style={{ fontSize: "48px", margin: "0 0 20px", fontWeight: "bold" }}
-          >
-            Experience Athens like a friend with me Alex, a local Athenian who
-            loves ancient Greek history/philosophy and admires beauty &
-            aesthetics.
+        <div style={{ position: "relative", maxWidth: "800px", padding: "0 20px" }}>
+          <h2 style={{ fontSize: "48px", margin: "0 0 20px", fontWeight: "bold" }}>
+            Experience Athens like a friend with me Alex, a local Athenian who loves ancient Greek history/philosophy and admires beauty & aesthetics.
           </h2>
-          <p
-            style={{ fontSize: "20px", margin: "0 0 30px", fontWeight: "bold" }}
-          >
-            Join our free walking tours led by passionate local guides.
-          </p>
+          <p style={{ fontSize: "20px", margin: "0 0 30px", fontWeight: "bold" }}>Join our free walking tours led by passionate local guides.</p>
         </div>
       </section>
 
@@ -288,15 +274,11 @@ function App() {
               fontWeight: "bold",
             }}
           >
-            A beautiful and natural route around the Acropolis with high-quality
-            history and philosophy. The route is entirely free from car/city
+            A beautiful and natural route around the Acropolis with high-quality history and philosophy. The route is entirely free from car/city
             noise.
-            <br /> <br /> If you love ancient history and philosophy, beautiful
-            aesthetic neighborhoods, and panoramic views, this tour is for you.
-            <br /> <br /> During the itinerary, I'll be happy to share some of
-            our best-kept secrets and answer all your questions and curiosities.
-            <br /> <br /> Tips in written form and Google Spots will be provided
-            for your next days in Athens (e.g., where to eat, what to do, hidden
+            <br /> <br /> If you love ancient history and philosophy, beautiful aesthetic neighborhoods, and panoramic views, this tour is for you.
+            <br /> <br /> During the itinerary, I'll be happy to share some of our best-kept secrets and answer all your questions and curiosities.
+            <br /> <br /> Tips in written form and Google Spots will be provided for your next days in Athens (e.g., where to eat, what to do, hidden
             gem places to visit).
             <br /> <br />
             *Not comfortable for baby strollers.
@@ -367,8 +349,7 @@ function App() {
               marginBottom: "20px",
             }}
           >
-            Thank you for your booking! We will contact you shortly to confirm
-            your tour.
+            Thank you for your booking! We will contact you shortly to confirm your tour.
           </div>
         )}
         {submitStatus === "error" && (
@@ -636,9 +617,7 @@ function App() {
           width: "100%",
         }}
       >
-        <div
-          style={{ maxWidth: isMobile ? "600px" : "1200px", margin: "0 auto" }}
-        >
+        <div style={{ maxWidth: isMobile ? "600px" : "1200px", margin: "0 auto" }}>
           <h2
             style={{
               textAlign: "center",
@@ -678,12 +657,9 @@ function App() {
                   color: "#666",
                 }}
               >
-                Alex was a great guide! The tour was super interesting and with
-                a deeper level of information! He showed us a bit of history,
-                philosophy, architecture, and curiosities about Athens that made
-                us fall in love with the city! He also gave us some precious
-                extra tips that defined the success and happiness of our
-                following days in Greece! Thank you!!
+                Alex was a great guide! The tour was super interesting and with a deeper level of information! He showed us a bit of history,
+                philosophy, architecture, and curiosities about Athens that made us fall in love with the city! He also gave us some precious extra
+                tips that defined the success and happiness of our following days in Greece! Thank you!!
               </p>
               <p style={{ fontWeight: "bold" }}>- Sarah from USA</p>
             </div>
@@ -707,10 +683,8 @@ function App() {
                   color: "#666",
                 }}
               >
-                Alex really wanted to explain the fundamental interconnectedness
-                of things and describe the currents of history while keeping it
-                grounded. This was very nice, at least for someone like me. It
-                was a lovely and relaxed wander.
+                Alex really wanted to explain the fundamental interconnectedness of things and describe the currents of history while keeping it
+                grounded. This was very nice, at least for someone like me. It was a lovely and relaxed wander.
               </p>
               <p style={{ fontWeight: "bold" }}>- James from UK</p>
             </div>
@@ -734,15 +708,10 @@ function App() {
                   color: "#666",
                 }}
               >
-                Alex was an outstanding tour guide! His vast knowledge of Greek
-                history and philosophy was fascinating. He managed to turn the
-                tour into a journey through time while incorporating personal
-                stories and humor that made every moment enjoyable. The personal
-                relationship he created with each of the participants was
-                exciting. Furthermore, at the end of the tour, Alex sent us a
-                detailed list of recommendations for other places in Athens that
-                simply must not be missed, including hidden local restaurants
-                and authentic corners.
+                Alex was an outstanding tour guide! His vast knowledge of Greek history and philosophy was fascinating. He managed to turn the tour
+                into a journey through time while incorporating personal stories and humor that made every moment enjoyable. The personal relationship
+                he created with each of the participants was exciting. Furthermore, at the end of the tour, Alex sent us a detailed list of
+                recommendations for other places in Athens that simply must not be missed, including hidden local restaurants and authentic corners.
               </p>
               <p style={{ fontWeight: "bold" }}>- Akiko from Japan</p>
             </div>
@@ -752,9 +721,7 @@ function App() {
 
       {/* Contact Section */}
       <section id="contact" style={{ padding: "80px 20px" }}>
-        <div
-          style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}
-        >
+        <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h2
             style={{
               margin: "0 0 30px",
@@ -773,8 +740,7 @@ function App() {
               fontWeight: "bold",
             }}
           >
-            If you have any questions or special requests, feel free to reach
-            out to us!
+            If you have any questions or special requests, feel free to reach out to us!
           </p>
 
           <div
@@ -797,9 +763,7 @@ function App() {
                 📧
               </div>
               <p style={{ margin: 0, fontWeight: "bold" }}>Email</p>
-              <p style={{ margin: "5px 0 0", color: "#666" }}>
-                hidden.gem.walking.tour@gmail.com
-              </p>
+              <p style={{ margin: "5px 0 0", color: "#666" }}>hidden.gem.walking.tour@gmail.com</p>
             </div>
             <br />
             <div style={{ textAlign: "center" }}>
@@ -812,16 +776,11 @@ function App() {
               >
                 📍
               </div>
-              <a
-                style={{ margin: 0, fontWeight: "bold" }}
-                href="https://g.co/kgs/33w9FCC"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a style={{ margin: 0, fontWeight: "bold" }} href="https://g.co/kgs/QMBmsjx" target="_blank" rel="noopener noreferrer">
                 Meeting Point
               </a>
               <a
-                href="https://g.co/kgs/33w9FCC"
+                href="https://g.co/kgs/QMBmsjx"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -833,7 +792,7 @@ function App() {
                 <p style={{ margin: "5px 0 0", color: "#666" }}>
                   ADAMS HOTEL
                   <br />
-                  THALOU 1, Athens 105 58 <br />
+                  THALOU 2, Athens 105 58 <br />
                   (There are a few wooden benches in front of ADAMS HOTELS.)
                 </p>
               </a>
@@ -841,14 +800,8 @@ function App() {
           </div>
 
           <div style={{ marginTop: "30px" }}>
-            <h3
-              style={{ margin: "0 0 20px", color: "white", fontWeight: "bold" }}
-            >
-              Follow Us
-            </h3>
-            <div
-              style={{ display: "flex", justifyContent: "center", gap: "20px" }}
-            >
+            <h3 style={{ margin: "0 0 20px", color: "white", fontWeight: "bold" }}>Follow Us</h3>
+            <div style={{ display: "flex", justifyContent: "center", gap: "20px" }}>
               <a
                 href="#"
                 style={{
@@ -885,12 +838,10 @@ function App() {
       >
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p style={{ margin: "0 0 20px", fontWeight: "bold", color: "black" }}>
-            © {new Date().getFullYear()} The Hidden Gem Tour. All rights
-            reserved.
+            © {new Date().getFullYear()} The Hidden Gem Tour. All rights reserved.
           </p>
           <p style={{ margin: 0, fontSize: "14px", color: "#aaa" }}>
-            Tours operate rain or shine. Please arrive 10 minutes before the
-            scheduled departure time.
+            Tours operate rain or shine. Please arrive 10 minutes before the scheduled departure time.
           </p>
         </div>
       </footer>
