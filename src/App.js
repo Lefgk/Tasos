@@ -686,7 +686,7 @@ function App() {
                 Alex really wanted to explain the fundamental interconnectedness of things and describe the currents of history while keeping it
                 grounded. This was very nice, at least for someone like me. It was a lovely and relaxed wander.
               </p>
-              <p style={{ fontWeight: "bold" }}>- Caroline from UK</p>
+              <p style={{ fontWeight: "bold" }}>- Caroline from Canada</p>
             </div>
 
             {/* Testimonial 3 */}
