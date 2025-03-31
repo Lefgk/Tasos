@@ -765,7 +765,7 @@ function App() {
               <p style={{ margin: 0, fontWeight: "bold" }}>Email</p>
               <p style={{ margin: "5px 0 0", color: "#666" }}>hidden.gem.walking.tour@gmail.com</p>
             </div>
-            <br />
+
             <div style={{ textAlign: "center" }}>
               <div
                 style={{
@@ -793,7 +793,7 @@ function App() {
                   ADAMS HOTEL
                   <br />
                   THALOU 2, Athens 105 58 <br />
-                  (There are a few wooden benches in front of ADAMS HOTELS.)
+                  (There are a few wooden benches <br /> in front of ADAMS HOTELS.)
                 </p>
               </a>
             </div>
