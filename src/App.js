@@ -661,7 +661,7 @@ function App() {
                 philosophy, architecture, and curiosities about Athens that made us fall in love with the city! He also gave us some precious extra
                 tips that defined the success and happiness of our following days in Greece! Thank you!!
               </p>
-              <p style={{ fontWeight: "bold" }}>- Sarah from USA</p>
+              <p style={{ fontWeight: "bold" }}>- Kelly from Australia</p>
             </div>
 
             {/* Testimonial 2 */}
@@ -686,7 +686,7 @@ function App() {
                 Alex really wanted to explain the fundamental interconnectedness of things and describe the currents of history while keeping it
                 grounded. This was very nice, at least for someone like me. It was a lovely and relaxed wander.
               </p>
-              <p style={{ fontWeight: "bold" }}>- James from UK</p>
+              <p style={{ fontWeight: "bold" }}>- Caroline from UK</p>
             </div>
 
             {/* Testimonial 3 */}
@@ -713,7 +713,7 @@ function App() {
                 he created with each of the participants was exciting. Furthermore, at the end of the tour, Alex sent us a detailed list of
                 recommendations for other places in Athens that simply must not be missed, including hidden local restaurants and authentic corners.
               </p>
-              <p style={{ fontWeight: "bold" }}>- Akiko from Japan</p>
+              <p style={{ fontWeight: "bold" }}>- Bhavna from India</p>
             </div>
           </div>
         </div>
